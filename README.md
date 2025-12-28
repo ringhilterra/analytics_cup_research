@@ -20,9 +20,7 @@ TO DO
 
 No setup required. Simply click the badge below to open and run the notebook directly in Google Colab:
 
-<a href="https://colab.research.google.com/github/ringhilterra/analytics_cup_research/blob/main/submission.ipynb" target="_blank">
-  <img src="https://colab.research.google.com/assets/colab-badge.svg" alt="Open In Colab"/>
-</a>
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/ringhilterra/analytics_cup_research/blob/main/submission.ipynb)
 
 ### Option 2: Run Locally
 
