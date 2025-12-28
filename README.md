@@ -38,19 +38,23 @@ For validation, we compared player ASI scores (calculated from 10 tracking match
 
 ### Results
 
-**Figure 1** illustrates a low-ASI pressure event where only 1 of 9 nearby teammates (11%) was actively moving while the ball carrier was pressed—8 teammates were static.
+**Single Event Analysis**
 
-![Figure 1: Low ASI pressure event showing 8 of 9 teammates static](figs/fig1_low_asi_pressure_event.png)
+Figure 1 shows a low-ASI pressure event where only 1 of 9 nearby teammates (11%) was actively moving—8 teammates were static.
 
-**External Validation:** ASI correlates strongly with season-level physical output (r = 0.74, p < 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min during possession versus 128.8 m/min for the bottom quartile—a 19% difference in work rate (**Figure 2**).
+![Figure 1](figs/fig1_low_asi_pressure_event.png)
 
-![Figure 2: ASI vs physical output correlation](figs/fig2_asi_physical_validation.png)
+**Validation with Physical Aggregates**
 
-**Position Validation:** ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p < 0.001).
+ASI correlates strongly with season-level physical output (r = 0.74, p < 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min versus 128.8 m/min for the bottom quartile—a 19% difference (Figure 2).
 
-**Team Differentiation:** Team ASI ranges from Perth Glory (98.3%) to Macarthur FC (91.5%), a 7-point spread indicating ASI can differentiate team off-ball movement cultures.
+![Figure 2](figs/fig2_asi_physical_validation.png)
 
-**Fatigue Analysis:** 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (p = 0.46, not significant).
+**Additional Findings**
+
+- *Position Validation:* ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p < 0.001).
+- *Team Differentiation:* Team ASI ranges from Perth Glory (98.3%) to Macarthur FC (91.5%), a 7-point spread indicating ASI can differentiate team off-ball movement cultures.
+- *Fatigue Analysis:* 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (p = 0.46, not significant).
 
 ### Conclusion
 
