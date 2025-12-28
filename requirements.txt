@@ -1,0 +1,8 @@
+# Tested with Python 3.12 on macOS
+pandas
+numpy
+matplotlib
+scipy
+requests
+mplsoccer
+seaborn
