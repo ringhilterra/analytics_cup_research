@@ -42,7 +42,7 @@ For validation, we compared player ASI scores (calculated from 10 tracking match
 
 **Single Event Analysis**
 
-Figure 1 shows a low-ASI pressure event where only 1 of 9 nearby teammates (11%) was actively moving—8 teammates were static.
+Figure 1 shows a pressure event with low Active Support Ratio where only 1 of 9 nearby teammates (11%) was actively moving—8 teammates were static.
 
 ![Figure 1](figs/fig1_low_asi_pressure_event.png)
 
