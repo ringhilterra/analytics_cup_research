@@ -4,15 +4,15 @@ SkillCorner X PySport Analytics Cup - Research Track
 
 ---
 
-## Abstract - The Active Support Index (ASI): Quantifying Off-Ball Movement During Pressure Events
+# The Active Support Index (ASI): Quantifying Off-Ball Movement During Pressure Events
 
----
+## Abstract
 
-## Introduction
+### Introduction
 
 When a ball carrier is pressured by an opponent, how actively do nearby teammates move to provide passing options? This question addresses a gap in football analytics: traditional metrics (xG, xA, pass completion) focus on ball events, leaving off-ball movement largely unquantified. This research introduces the **Active Support Index (ASI)**, a metric framework that measures teammate support during pressure moments using Skillcorner tracking, dynamic_events, and player physical aggregate data. ASI quantifies how often nearby teammates are actively moving versus standing static when a pressured teammate needs support.
 
-## Methods
+### Methods
 
 We analyzed 10 A-League 2024/25 matches containing 7,063 pressure events using SkillCorner's 10fps tracking data. Player velocities were calculated using a Savitzky-Golay filter (window=7 frames, polynomial degree=2) applied to positional data.
 
@@ -32,7 +32,7 @@ We analyzed 10 A-League 2024/25 matches containing 7,063 pressure events using S
 
 For validation, we compared player ASI scores (calculated from 10 tracking matches) against season-level physical aggregates from 175 A-League matches, specifically meters per minute during team possession (`total_metersperminute_full_tip`).
 
-## Results
+### Results
 
 **Figure 1** illustrates a low-ASI pressure event where only 1 of 9 nearby teammates (11%) was actively moving while the ball carrier was pressed—8 teammates were static.
 
@@ -52,7 +52,7 @@ For validation, we compared player ASI scores (calculated from 10 tracking match
 
 **Fatigue Analysis:** 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (not statistically significant, p = 0.46).
 
-## Conclusion
+### Conclusion
 
 The Active Support Index provides a quantitative framework for measuring off-ball support during pressure events. The strong correlation with independent physical aggregate data (r = 0.74 across 175 matches) validates that ASI captures real physical behavior rather than arbitrary thresholds. Applications include identifying players who consistently provide active support under pressure, diagnosing static tendencies for coaching intervention, and comparing team tactical styles.
 
