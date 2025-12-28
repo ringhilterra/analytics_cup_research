@@ -2,6 +2,8 @@ SkillCorner X PySport Analytics Cup - Research Track
  
 **Author: Ryan Inghilterra**
 
+Let's connect! [LinkedIn](https://www.linkedin.com/in/ryan-inghilterra-017/) · [Substack](https://substack.com/@ringhilterra)
+
 ---
 
 # The Active Support Index (ASI): Quantifying Off-Ball Movement During Pressure Events
