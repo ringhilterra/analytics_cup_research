@@ -10,7 +10,7 @@ SkillCorner X PySport Analytics Cup - Research Track
 
 ### Introduction
 
-When a ball carrier is pressured by an opponent, how actively do nearby teammates move to provide passing options? This question addresses a gap in football analytics: traditional metrics (xG, xA, pass completion) focus on ball events, leaving off-ball movement largely unquantified. This research introduces the **Active Support Index (ASI)**, a metric framework that measures teammate support during pressure moments using Skillcorner tracking, dynamic_events, and player physical aggregate data. ASI quantifies how often nearby teammates are actively moving versus standing static when a pressured teammate needs support.
+On average, players spend 98% of a match without the ball, yet football analytics overwhelmingly focuses on the 2% with it—xG, xA, pass completion. Off-ball movement remains largely unquantified. When a ball carrier is pressured, how actively do teammates move to provide passing options? This research introduces the **Active Support Index (ASI)**, a metric framework leveraging SkillCorner tracking and dynamic event data to measure teammate support during pressure moments, validated against season-level physical output.
 
 ### Methods
 
@@ -20,9 +20,9 @@ We analyzed 10 A-League 2024/25 matches containing 7,063 pressure events using S
 
 | Level | Metric | Formula |
 |-------|--------|---------|
-| Per Event | Active Support Ratio | Active Supporters / Nearby Teammates |
-| Per Player | Player ASI | Active Support Count / Support Opportunities |
-| Per Team | Team ASI | 1 − Static Rate |
+| Per Event | Active Support Ratio | $\frac{\text{Active Supporters}}{\text{Nearby Teammates}}$ |
+| Per Player | Player ASI | $\frac{\text{Active Support Count}}{\text{Support Opportunities}}$ |
+| Per Team | Team ASI | $1 - \text{Static Rate}$ |
 
 **Key Definitions:**
 - **Active Supporter**: Teammate within 35m of the pressed player AND moving >2 m/s
@@ -40,17 +40,17 @@ For validation, we compared player ASI scores (calculated from 10 tracking match
 
 *Figure 1: Pressure event with Active Support Ratio = 0.11. Only player #17 (2.2 m/s) provides active support while 8 nearby teammates remain static (<2 m/s).*
 
-**External Validation:** ASI correlates strongly with season-level physical output (Pearson r = 0.74, p = 4.47e-30, n = 167 players). Players in the top ASI quartile cover 153.2 m/min during possession versus 128.8 m/min for the bottom quartile—a 19% difference in work rate (**Figure 2**).
+**External Validation:** ASI correlates strongly with season-level physical output (r = 0.74, p < 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min during possession versus 128.8 m/min for the bottom quartile—a 19% difference in work rate (**Figure 2**).
 
 ![Figure 2: ASI vs physical output correlation](figs/fig2_asi_physical_validation.png)
 
 *Figure 2: Player ASI scores versus season-level meters per minute during possession. Strong positive correlation (r = 0.74) validates that ASI captures genuine physical behavior.*
 
-**Position Validation:** ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (Mann-Whitney U = 4092, p = 4.00e-14).
+**Position Validation:** ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p < 0.001).
 
 **Team Differentiation:** Team ASI ranges from Perth Glory (98.3%) to Macarthur FC (91.5%), a 7-point spread indicating ASI can differentiate team off-ball movement cultures.
 
-**Fatigue Analysis:** 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (not statistically significant, p = 0.46).
+**Fatigue Analysis:** 58% of players (n=151) showed declining ASI in the second half, with average support ratio dropping from 53.7% to 53.1% (p = 0.46, not significant).
 
 ### Conclusion
 
