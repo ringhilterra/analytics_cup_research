@@ -86,4 +86,20 @@ def __getattr__(name):
     elif name == "print_fatigue_summary":
         from .asi_time_analysis import print_fatigue_summary
         return print_fatigue_summary
+    # Physical validation functions
+    elif name == "load_physical_aggregates":
+        from .asi_physical_validation import load_physical_aggregates
+        return load_physical_aggregates
+    elif name == "merge_asi_with_physical":
+        from .asi_physical_validation import merge_asi_with_physical
+        return merge_asi_with_physical
+    elif name == "calculate_physical_correlation":
+        from .asi_physical_validation import calculate_physical_correlation
+        return calculate_physical_correlation
+    elif name == "plot_asi_physical_correlation":
+        from .asi_physical_validation import plot_asi_physical_correlation
+        return plot_asi_physical_correlation
+    elif name == "print_physical_validation_summary":
+        from .asi_physical_validation import print_physical_validation_summary
+        return print_physical_validation_summary
     raise AttributeError(f"module 'src' has no attribute '{name}'")
