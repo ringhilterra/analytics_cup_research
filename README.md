@@ -10,7 +10,11 @@ SkillCorner X PySport Analytics Cup - Research Track
 
 ### Introduction
 
-On average, players spend 98% of a match without the ball, yet football analytics overwhelmingly focuses on the 2% with it—xG, xA, pass completion. Off-ball movement remains largely unquantified. When a ball carrier is pressured, how actively do teammates move to provide passing options? This research introduces the **Active Support Index (ASI)**, a metric framework leveraging SkillCorner tracking and dynamic event data to measure teammate support during pressure moments, validated against season-level physical output.
+On average, players spend 98% of a match without the ball, yet football analytics overwhelmingly focuses on the 2% with it. With the latest advancements in computer vision, a golden opportunity to derive metrics and insights from off-ball movement is now possible.
+
+**Core Question:** When a ball carrier is pressured, how actively do teammates move to provide passing options?
+
+This research introduces the **Active Support Index (ASI)**, a metric framework leveraging SkillCorner tracking and dynamic event data to measure teammate support during pressure moments, validated against season-level physical output. Applications include identifying players who consistently provide active support, diagnosing static tendencies for coaching intervention, and comparing team tactical styles.
 
 ### Methods
 
@@ -38,13 +42,9 @@ For validation, we compared player ASI scores (calculated from 10 tracking match
 
 ![Figure 1: Low ASI pressure event showing 8 of 9 teammates static](figs/fig1_low_asi_pressure_event.png)
 
-*Figure 1: Pressure event with Active Support Ratio = 0.11. Only player #17 (2.2 m/s) provides active support while 8 nearby teammates remain static (<2 m/s).*
-
 **External Validation:** ASI correlates strongly with season-level physical output (r = 0.74, p < 0.001, n = 167). Players in the top ASI quartile cover 153.2 m/min during possession versus 128.8 m/min for the bottom quartile—a 19% difference in work rate (**Figure 2**).
 
 ![Figure 2: ASI vs physical output correlation](figs/fig2_asi_physical_validation.png)
-
-*Figure 2: Player ASI scores versus season-level meters per minute during possession. Strong positive correlation (r = 0.74) validates that ASI captures genuine physical behavior.*
 
 **Position Validation:** ASI aligns with expected positional demands. Midfielders average 59.4% ASI versus 45.2% for defenders (p < 0.001).
 
